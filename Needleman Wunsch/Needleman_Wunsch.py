@@ -9,7 +9,6 @@ with open("sekwencja1.fasta", "r") as sek_1:
             sek1 += line
 sek1 = sek1.rstrip("\n")
 
-
 with open("sekwencja2.fasta", "r") as sek_2:
     for line in sek_2.readlines():
         if line.startswith(">"):
@@ -39,11 +38,9 @@ for j in range(n+1):   # uzupelniamy wartosciami
 for i in range(m+1):
     mat[i][0] = gap*i
 
-
 #uzupaleniamy macierz dopasowanie/niedopasowanie/gap
 for i in range(1,m+1):
     for j in range(1, n+1):
-
         if sek1[i-1] == sek2[j-1]:
             mat[i][j] = max(mat[i][j-1]+gap, mat[i-1][j]+gap, mat[i-1][j-1]+match)
 
@@ -51,12 +48,10 @@ for i in range(1,m+1):
             mat[i][j] = max(mat[i][j-1]+gap, mat[i-1][j]+gap, mat[i-1][j-1]+mismatch)
 
 
-
 for row in mat:
     for element in row:
         print(element, end="\t")
     print("\n")
-
 
 #Backtracking
 sek1_dopasowanie = ""
@@ -64,7 +59,6 @@ sek2_dopasowanie = ""
 
 i = m
 j = n
-
 
 while i > 0 or j > 0:
     #jesli jest dopasowanie skocz do komorki na ukosie
@@ -77,7 +71,6 @@ while i > 0 or j > 0:
     #jesli nie ma dopasowania
     else:
         temp_list = [mat[i-1][j-1], mat[i-1][j], mat[i][j-1]]  #maksymalna z gory, ukosa, z lewej
-
         #sprawdzenie ktora byla wybrana maksymalna i uzupelnienie dopasowania do sekwencji
         if max(temp_list) == temp_list[0]:
             sek1_dopasowanie += sek1[i-1]
