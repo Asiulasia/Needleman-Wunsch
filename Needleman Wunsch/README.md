@@ -19,7 +19,9 @@ GTCGACGCA
 ```
 
 Po zakoñczeniu dzia³ania programu zostanie zapisany plik wynikowy wynik.txt z przyk³adow¹ zawartoœci¹:
+```plaintext 
 GATTA--CAG
 |***|  ||*
 GTCGACGCAT
 Score:-2
+```
