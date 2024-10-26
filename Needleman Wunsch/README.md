@@ -16,6 +16,7 @@ Plik para_sek.fasta powinien byæ sformatowany tak, aby ka¿da sekwencja by³a popr
 GATTACA
 > Sequence 2
 GTCGACGCA
+```
 
 Po zakoñczeniu dzia³ania programu zostanie zapisany plik wynikowy wynik.txt z przyk³adow¹ zawartoœci¹:
 GATTA--CAG
