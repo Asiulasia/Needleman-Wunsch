@@ -5,7 +5,7 @@
 Ten program implementuje algorytm Needleman-Wunsch do dopasowywania dwóch sekwencji nukleotydowych. 
 Algorytm ten pozwala znaleŸæ optymalne globalne dopasowanie miêdzy dwoma sekwencjami, wykorzystuj¹c macierz wyników i procedurê backtrackingu.
 
-## Sposób uŸycia
+## Sposób u¿ycia
 
 Aby uruchomiæ program, za³aduj do pliku para_sek.fasta dwie sekwencje, których dopasowanie chcesz znaleŸæ.
 Nale¿y wprowadziæ sekwencje aminokwasowe do pliku tylko w formacie FASTA.
