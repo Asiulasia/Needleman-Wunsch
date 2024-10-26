@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>582ddd1a-e62b-498a-98ca-6f62de92ae6c</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>Needleman_Wunsch.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Needleman Wunsch</Name>
+    <Name>Needleman_Wunsch</Name>
     <RootNamespace>Needleman Wunsch</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -24,8 +25,8 @@
     <Compile Include="Needleman_Wunsch.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sekwencja1.fasta" />
-    <Content Include="sekwencja2.fasta" />
+    <Content Include="README.md" />
+    <Content Include="para_sek.fasta" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

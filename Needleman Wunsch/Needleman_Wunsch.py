@@ -1,20 +1,19 @@
 sek1 = ""
 sek2 = ""
+curr = 0
 
-with open("sekwencja1.fasta", "r") as sek_1:
+with open("para_sek.fasta", "r") as sek_1:
     for line in sek_1.readlines():
         if line.startswith(">"):
+            curr += 1
             continue
         else:
-            sek1 += line
-sek1 = sek1.rstrip("\n")
+            if curr == 1:
+                sek1 += line
+            if curr == 2:
+                sek2 += line
 
-with open("sekwencja2.fasta", "r") as sek_2:
-    for line in sek_2.readlines():
-        if line.startswith(">"):
-            continue
-        else:
-            sek2 += line
+sek1 = sek1.rstrip("\n")
 sek2 = sek2.rstrip("\n")
 
 m = len(sek1)   #liczba wierszy - Sekwencja1 po lewej
