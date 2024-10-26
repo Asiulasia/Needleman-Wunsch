@@ -47,11 +47,11 @@ for i in range(1,m+1):
         else:
             mat[i][j] = max(mat[i][j-1]+gap, mat[i-1][j]+gap, mat[i-1][j-1]+mismatch)
 
-
-for row in mat:
-    for element in row:
-        print(element, end="\t")
-    print("\n")
+#wyswietlanie macierzy
+#for row in mat:
+#    for element in row:
+#        print(element, end="\t")
+#    print("\n")
 
 #Backtracking
 sek1_dopasowanie = ""
@@ -108,7 +108,17 @@ for i in range(len(dopasowanie)):
     elif (dopasowanie[i] == "*" or dopasowanie[i] == " "):
         score += -1
 
+wynik_file = "wynik.txt"
+
+with open(wynik_file, 'w') as file:
+    file.write(sek1_dop + "\n")
+    file.write(dopasowanie + "\n")
+    file.write(sek2_dop + "\n")
+    file.write("Score:")
+    file.write(str(score) + "\n")
+
 print(sek1_dop)
 print(dopasowanie)
 print(sek2_dop, "\n")
 print("Score:", score)
+print("Wyniki zostaly zapisane do pliku wynik.txt")
