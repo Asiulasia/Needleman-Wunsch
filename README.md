@@ -2,20 +2,26 @@
 
 ## Opis
 
-Ten program implementuje algorytm Needleman-Wunscha do dopasowywania dwÛch sekwencji nukleotydowych. Algorytm ten pozwala znaleüÊ optymalne globalne dopasowanie miÍdzy dwoma sekwencjami, wykorzystujπc macierz wynikÛw i procedurÍ backtrackingu.
+Ten program implementuje algorytm Needleman-Wunsch do dopasowywania dw√≥ch sekwencji nukleotydowych. 
+Algorytm ten pozwala znale≈∫ƒá optymalne globalne dopasowanie miƒôdzy dwoma sekwencjami, wykorzystujƒÖc macierz wynik√≥w i procedurƒô backtrackingu.
 
-## SposÛb uzycia
+## Spos√≥b u≈ºycia
 
-Aby uruchomiÊ program, za≥aduj do pliku para_sek.fasta dwie sekwencje, ktÛrych dopasowanie chcesz znaleüÊ.
-Naleøy wprowadziÊ sekwencje aminokwasowe do pliku tylko w formacie FASTA.
-Plik para_sek.fasta powinien byÊ sformatowany tak, aby kaøda sekwencja by≥a poprzedzona liniπ zaczynajπcπ siÍ od >, na przyk≥ad:
-#> Sequence 1
-#GATTACA
-#> Sequence 2
-#GTCGACGCA
+Aby uruchomiƒá program, za≈Çaduj do pliku para_sek.fasta dwie sekwencje, kt√≥rych dopasowanie chcesz znale≈∫ƒá.
+Nale≈ºy wprowadziƒá sekwencje aminokwasowe do pliku tylko w formacie FASTA.
+Plik para_sek.fasta powinien byƒá sformatowany tak, aby ka≈ºda sekwencja by≈Ça poprzedzona liniƒÖ zaczynajƒÖcƒÖ siƒô od >, na przyk≈Çad:
 
-Po zakoÒczeniu dzia≥ania programu zostanie zapisany plik wynikowy wynik.txt z przyk≥adowπ zawartoúciπ:
+```plaintext 
+> Sequence 1
+GATTACA
+> Sequence 2
+GTCGACGCA
+```
+
+Po zako≈Ñczeniu dzia≈Çania programu zostanie zapisany plik wynikowy wynik.txt z przyk≈ÇadowƒÖ zawarto≈õciƒÖ:
+```plaintext 
 GATTA--CAG
 |***|  ||*
 GTCGACGCAT
 Score:-2
+```
